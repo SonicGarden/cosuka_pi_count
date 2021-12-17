@@ -8,7 +8,8 @@ module CosukaPiCount
                  record: {
                    type: { value: CosukaPiCount.configuration.type },
                    name: { value:  CosukaPiCount.configuration.name },
-                   count: { value: CosukaPiCount.configuration.count.call }
+                   count: { value: CosukaPiCount.configuration.count.call },
+                   is_important_private_info: { value: CosukaPiCount.configuration.is_important_private_info }
                  }
       }
 

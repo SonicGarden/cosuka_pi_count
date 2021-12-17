@@ -10,6 +10,7 @@ class CosukaPiCountGenerator < Rails::Generators::Base
         CosukaPiCount.configure do |config|
           config.name = "#{Rails.application.class.module_parent.name.downcase}"
           config.count = -> { User.count }
+          config.is_important_private_info = 'true'
           config.kintone_api_token = ENV['KINTONE_COSUKA_PI_COUNT_API_KEY']
         end
       EOF
