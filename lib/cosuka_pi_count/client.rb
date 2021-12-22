@@ -7,6 +7,7 @@ module CosukaPiCount
       params = { app: KINTONE_APP_ID,
                  record: {
                    type: { value: CosukaPiCount.configuration.type },
+                   platform: { value: CosukaPiCount.configuration.platform },
                    name: { value:  CosukaPiCount.configuration.name },
                    count: { value: CosukaPiCount.configuration.count.call },
                    is_important_private_info: { value: CosukaPiCount.configuration.is_important_private_info }
