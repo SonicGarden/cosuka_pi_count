@@ -35,6 +35,15 @@ Or install it yourself as:
 
     bin/rake cosuka_pi_count:report
 
+## config/initializers/cosuka_pi_count.rb
+|key|説明|
+|---|---|
+|config.name|アプリケーション名(githubのプロジェクト名と合わせてください)|
+|config.type|`'standard'`(VCTO)/`'light'`(業務ハック系)|
+|config.platform|`'aws'`/`'heroku'`/`'firebase'`|
+|config.count|個人情報・要配慮情報の件数取得コード|
+|config.is_important_private_info|`'true'`/`'false'` サービスとして要配慮情報を有している場合 `'true'`|
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cosuka_pi_count.
