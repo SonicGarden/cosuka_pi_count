@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cosuka_pi_count', github: 'SonicGarden/cosuka_pi_count'
+gem 'cosuka_pi_count', github: 'SonicGarden/cosuka_pi_count', branch: 'main'
 ```
 
 And then execute:
