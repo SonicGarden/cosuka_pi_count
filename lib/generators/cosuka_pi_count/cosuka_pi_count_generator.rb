@@ -9,8 +9,8 @@ class CosukaPiCountGenerator < Rails::Generators::Base
       <<~EOF
         CosukaPiCount.configure do |config|
           config.name = "#{Rails.application.class.module_parent.name.downcase}"
-          config.type = 'standard'
-          config.platform = 'aws'
+          config.type = 'standard' # `standard`, `owned` or `light`
+          config.platform = 'aws' # `aws`, `heroku` or `firebase`
           config.count = -> { User.count }
           config.is_important_private_info = true
           config.payment_system_name = ''
