@@ -10,6 +10,7 @@ class CosukaPiCountGenerator < Rails::Generators::Base
         CosukaPiCount.configure do |config|
           config.name = "#{Rails.application.class.module_parent.name.downcase}"
           config.type = 'standard'
+          config.platform = 'aws'
           config.count = -> { User.count }
           config.is_important_private_info = true
           config.payment_system_name = ''
